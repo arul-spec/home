@@ -81,6 +81,33 @@ color:#60a5fa;
 margin-top:0;
 }
 
+/* Guide Scroller */
+
+.guideScroll{
+height:120px;
+overflow:hidden;
+position:relative;
+}
+
+.guideContent{
+position:absolute;
+width:100%;
+animation:scrollGuide 25s linear infinite;
+line-height:1.8;
+}
+
+@keyframes scrollGuide{
+
+0%{
+top:100%;
+}
+
+100%{
+top:-100%;
+}
+
+}
+
 .footer{
 margin-top:40px;
 font-size:13px;
@@ -145,11 +172,47 @@ Open Guide
 </div>
 
 
+<!-- Routine Reminder -->
+
 <div class="routine">
 
 <h3>Routine Reminder</h3>
 
 <div id="routineText"></div>
+
+</div>
+
+
+<!-- Guide Scroller -->
+
+<div class="routine">
+
+<h3>Health Guide Quick Tips</h3>
+
+<div class="guideScroll">
+
+<div class="guideContent">
+
+• Use mild cleanser for bathing and avoid harsh soaps<br>
+• Apply moisturizer after bath to protect skin barrier<br>
+• Drink 2–2.5 liters of water daily<br>
+• Eat fruits, vegetables, nuts and curd regularly<br>
+• Reduce deep fried and sugary foods<br>
+• Stretch every morning and walk daily<br>
+• Elevate legs after work to improve circulation<br>
+• Perform heel raises and ankle rotations<br>
+• Apply heel cream and wear cotton socks at night<br>
+• Avoid walking barefoot indoors<br>
+• Sleep on the side to reduce snoring<br>
+• Maintain regular sleep timing<br>
+• Aron routine: warm water after waking<br>
+• Fruits like papaya or banana daily<br>
+• Sit on toilet after breakfast for bowel training<br>
+• Encourage outdoor play and physical activity daily<br>
+
+</div>
+
+</div>
 
 </div>
 
