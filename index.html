@@ -67,6 +67,20 @@ text-decoration:none;
 font-weight:bold;
 }
 
+.routine{
+margin-top:30px;
+background:#020617;
+border:1px solid #1e293b;
+border-radius:12px;
+padding:20px;
+text-align:left;
+}
+
+.routine h3{
+color:#60a5fa;
+margin-top:0;
+}
+
 .footer{
 margin-top:40px;
 font-size:13px;
@@ -114,13 +128,101 @@ Open Dashboard
 
 </div>
 
+
+<div class="card">
+
+<h3>Health Guide</h3>
+<p>Complete routine guide for Agi and Aron.</p>
+
+<a class="btn"
+href="https://docs.google.com/document/d/1jGQnO2b0jHpdecxjxC_x_7gSWxBeJ9vdcu0k6fDAbhs"
+target="_blank">
+Open Guide
+</a>
+
 </div>
+
+</div>
+
+
+<div class="routine">
+
+<h3>Routine Reminder</h3>
+
+<div id="routineText"></div>
+
+</div>
+
 
 <div class="footer">
 Health Monitoring System
 </div>
 
 </div>
+
+
+<script>
+
+const now=new Date()
+const hour=now.getHours()
+
+let text=""
+
+if(hour<9){
+
+text=`
+Morning Routine
+
+• Wake up around 6 AM
+• Stretching and walking
+• Bath with mild cleanser
+• Apply moisturizer
+• Healthy breakfast
+`
+
+}
+
+else if(hour<17){
+
+text=`
+Day Routine
+
+• Maintain hydration
+• Eat fruits or healthy snacks
+• Avoid excessive sanitizer
+• Short walking breaks
+`
+
+}
+
+else if(hour<21){
+
+text=`
+Evening Routine
+
+• Walking or light exercise
+• Elevate legs for circulation
+• Healthy dinner
+`
+
+}
+
+else{
+
+text=`
+Night Routine
+
+• Apply heel cream
+• Hand moisturizer
+• Prepare for sleep
+• Fill Daily Health Tracker
+`
+
+}
+
+document.getElementById("routineText").innerText=text
+
+</script>
 
 </body>
 </html>
