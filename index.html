@@ -2,61 +2,122 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Data-Technics Tools</title>
+<title>Daily Health Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{font-family:Arial;background:#0f172a;color:white;margin:0;padding:30px}
-h1{color:#60a5fa}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:#020617;padding:20px;border-radius:10px;border:1px solid #1e293b}
-a{display:block;margin-top:10px;padding:10px;text-align:center;background:#22d3ee;color:#001926;text-decoration:none;border-radius:6px}
+
+body{
+font-family:Segoe UI;
+background:#0f172a;
+margin:0;
+padding:40px;
+color:white;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.header{
+font-size:32px;
+margin-bottom:10px;
+color:#60a5fa;
+}
+
+.sub{
+color:#94a3b8;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#020617;
+padding:25px;
+border-radius:14px;
+border:1px solid #1e293b;
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+border-color:#334155;
+}
+
+.card h3{
+margin-top:0;
+}
+
+.btn{
+display:block;
+text-align:center;
+margin-top:15px;
+padding:12px;
+border-radius:8px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.footer{
+margin-top:40px;
+font-size:13px;
+color:#94a3b8;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<h1>Data-Technics Internal Tools</h1>
+<div class="container">
+
+<div class="header">Daily Health Tracker</div>
+
+<div class="sub">
+Track daily health routines and view insights
+</div>
 
 <div class="grid">
 
 <div class="card">
-<h3>Daily Form</h3>
-<a target="_blank"
-href="https://script.google.com/macros/s/AKfycbwyldBDBxsnhzk1H_NZGPxprMjXBdTd_gwJDcwwG66Eebq4W4AqsRat066Uu9LMNhKz/exec">
-Open
+
+<h3>Daily Health Form</h3>
+<p>Submit today's health activities.</p>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbyWGLXxN3kMgsMOQzVw8oSnTLMdqFWAg0s5KjPC0ei7993ldr4ZoePQDuG_DWlY2wxL/exec?page=form">
+Open Form
 </a>
+
 </div>
 
-<div class="card">
-<h3>Dashboard</h3>
-<a target="_blank"
-href="https://script.google.com/macros/s/AKfycbw7sdDJp12cMPm4HjtXHwSfsi4PGs12CY82lhfBmoiY2ZpdxeG2CWyqc3_LVmaxDg1b/exec">
-Open
-</a>
-</div>
 
 <div class="card">
-<h3>Excel Backend</h3>
-<a target="_blank"
-href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRXQv2cgQhd9KOIcziopCiW0UE6ZyHtok-M3RZxYgBsSn8zAH5aCfFb7O-vP4ufaC-jtbyQEWL6dUvs/pubhtml">
-Open
+
+<h3>Health Dashboard</h3>
+<p>View health trends and analytics.</p>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbyWGLXxN3kMgsMOQzVw8oSnTLMdqFWAg0s5KjPC0ei7993ldr4ZoePQDuG_DWlY2wxL/exec?page=dashboard">
+Open Dashboard
 </a>
+
 </div>
 
-<div class="card">
-<h3>Daily Attendance</h3>
-<a target="_blank"
-href="https://script.google.com/a/macros/datatechnics.in/s/AKfycbwN0AQUhCbBTc8TkUMyQlNxB-Wy9FEI5HsGj44zpKA7uZ_4woSRjhquGiMwtzEjBT333Q/exec?view=app">
-Open
-</a>
 </div>
 
-<div class="card">
-<h3>Attendance Dashboard</h3>
-<a target="_blank"
-href="https://script.google.com/a/macros/datatechnics.in/s/AKfycbwwfPmJf3weY0jznRsKpkrthOkx3H6-B3jL_0zpJmIT86sjLiofaIQt6_doB0dIkuN7vw/exec?view=dashboard">
-Open
-</a>
+<div class="footer">
+Health Monitoring System
 </div>
 
 </div>
